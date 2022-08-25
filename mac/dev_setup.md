@@ -1,14 +1,18 @@
-# Macの開発環境構築
+# 開発用Macのセットアップ
 ## はじめに
-Macを開発用に使うときの本体設定やインストールするアプリケーションをまとめました。
-ちなみに筆者はwebエンジニアで、PHP、JavaScript、Node.js、Python等を使います。
-実行環境はMacOs：M1チップ Monterey 12.4です。
+開発用にM1のMacを買ったので、やるべきことをまとめました。
+参考に筆者はwebエンジニアで、PHP、JavaScript、Node.js、Python等を使います。
+
+## 実行環境
+MacOs：M1チップ Monterey 12.4
 
 ## 本体設定
 - OSアップデート
-- 「Dock」を自動的に表示/非表示のチェックをつける
+- Dockを自動的に表示/非表示のチェックをつける
+- Dockをカスタマイズ
+- バッテリーの%表示
 
-## アプリケーションのインストール
+## 必須アプリケーションのインストール
 ### ブラウザ
 - Google Chrome
 https://www.google.com/intl/ja_jp/chrome/
@@ -20,95 +24,58 @@ https://iterm2.com/
 https://www.warp.dev/
 
 ### エディタ
+エディタは便利な拡張機能が豊富にあり、カスタマイズ性が十分にあるVSCode一択です。
 - VSCode
 https://code.visualstudio.com/download
 
 ### チャットツール
-#### Slack
+クライアントやチームメンバーによって使い分けるため、複数インストールします。
+- Slack
 https://slack.com/intl/ja-jp/downloads/mac
-#### Discord
+- Discord
 https://discord.com/download
-#### ChatWork
+- ChatWork
 https://go.chatwork.com/ja/download/
 
 ### web会議ツール
-#### zoom
+クライアントやチームメンバーによって使い分けるため、複数インストールします。
+- zoom
 https://zoom.us/download
-#### Microsoft Teams
+- Microsoft Teams
 https://www.microsoft.com/ja-jp/microsoft-teams/download-app
-#### Google Meet
+- Google Meet
 https://meet.google.com/
 
 ### SQLクライアント
-#### TablePlus
+- TablePlus
 https://tableplus.com/
 
 ### FTPクライアント
-#### FileZilla
+- FileZilla
 https://filezilla.jp.uptodown.com/mac
 
 ### パッケージマネージャ
-#### Homebrew
+- Homebrew
+Macのパッケージ管理ツールで、コマンド一つでパッケージを管理できます。
+Macで開発するには必須のツールです。
 https://brew.sh/index_ja
 
 ### その他
-#### Postman
+- Postman
+APIのレスポンスを確認するアプリケーションです。
 https://www.postman.com/
-#### Docker Desktop
+- Docker Desktop
+今やローカルの開発環境に必須だと思われます。
 https://www.docker.com/products/docker-desktop/
-#### git
+
+## Homebrewでパッケージをインストール
+- git
 デフォルトでApple gitがインストールされていますが、Homebrewで新しくインストールします。
-```
-brew git install
-// シェルを確認
-echo $SHELL
-
-// パスを追加する
-// /bin/zshの場合
-vi ~/.zshrc
-// ファイルの一番最後にexport PATH=/usr/local/bin/git:$PATHを記載
-source ~/.zshrc
-
-// /bin/bashの場合
-vi ~/.bash_profile
-// ファイルの一番最後にexport PATH=/usr/local/bin/git:$PATHを記載
-source ~/.bash_profile
-```
-
-#### Node.js
-複数バージョンを管理するために、nodebrewでインストールします。
-```
-brew install nodebrew 
-// nodebrewをセットアップ
-nodebrew setup
-
-// パスを追加する
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zshrc
-// または
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
-
-// シェルの設定を反映
-source ~/.bash_profile
-
-// Node.jsをインストール
-nodebrew install バージョン
-// 安定版をインストールする場合
-nodebrew install stable
-
-// Node.jsの有効化
-nodebrew use バージョン
-```
-
-#### yarn
-```
-brew install yarn
-```
+- Node.js
+複数バージョンが管理できるので、nodebrewを用いてインストールします。
+- Python
+複数バージョンが管理できるので、pyenvを用いてインストールします。
 
 
-
-
-
-
-
-
-
+## おわりに
+基本的には個人的なメモですが、誰かの参考になれば幸いです。
