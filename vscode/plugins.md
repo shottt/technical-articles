@@ -1,7 +1,7 @@
-# VSCodeに個人的に入れている拡張機能
+# エンジニアにおすすめのVSCodeの拡張機能
 ## はじめに
-VSCodeに個人的に入れている拡張機能をまとめました。
-筆者はwebエンジニアで、言語はJavaScript、TypeScript、PHP、Python、フレームワークはLaravel、Vue.jsを使っています。
+エンジニアにおすすめのVSCodeの拡張機能を紹介します。
+参考に筆者はwebエンジニアで、言語はJavaScript、TypeScript、PHP、Python、フレームワークはLaravel、Vue.jsを使っています。
 
 ## 入力補完
 ### Auto Close Tag
@@ -40,6 +40,9 @@ https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade
 ### indent-rainbow
 インデントに色をつけてコードを見やすくする拡張機能です。
 https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
+### Color Highlight
+カラーコードを入力すると、その色を可視化してくれる拡張機能です。
+https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
 
 ## 構文チェック
 ### Code Spell Checker
@@ -69,3 +72,11 @@ https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 ### Markdown Preview Mermaid Support
 JavaScriptベースのMarkdown構文で書ける作図ツールのMermaidのプレビューができる拡張機能です。
 https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid
+
+### REST Client
+VSCode上でHTTPリクエストを送信し、VScode上でレスポンスを確認できる拡張機能です。
+https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+## 最後に
+VScodeは便利な拡張機能が多く、使用目的に合った拡張機能を追加することで、最適な開発環境を構築することができます。
+この記事で紹介した拡張機能が参考になったら幸いです。
