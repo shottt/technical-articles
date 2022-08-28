@@ -10,7 +10,7 @@ nodebrewの場合はコマンドだけでNode.jsのバージョンの切り替�
 ## Homebrewのインストール
 ターミナルを開き、以下のコマンドでMacのパッケージ管理ツールのHomebrewをインストールします。
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 参考
 https://brew.sh/index_ja
@@ -18,7 +18,7 @@ https://brew.sh/index_ja
 ## nodebrewのインストール
 ターミナルで以下のコマンドを実行します。
 ```
-brew install nodebrew 
+% brew install nodebrew 
 ```
 ## パスを通す
 `nodebrew setup`コマンドを叩いて追加するパスを確認します。
@@ -36,7 +36,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 ```
 以下のコマンドを叩いて使っているシェルを確認します。
 ```
-echo $SHELL
+% echo $SHELL
 ```
 #### /bin/zshの場合
 以下のコマンドを実行してパスを通します。
