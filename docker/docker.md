@@ -155,6 +155,9 @@ docker-compose down
 で実行できます。基本的にdockerコマンドと同じコマンドをdocker-composeの後ろにつければ同じことができます。
 ※ docker-compose互換でcompose-spec準拠のDocker Compose CLIがあり、「docker-compose」→「docker compose」で書けます。compose-specとは、プラットフォームに依存しない、マルチコンテナなアプリケーションを定義する標準仕様です。
 
+以下はweb、redis、dbの3つのコンテナを起動するdocker-composeファイルです。
+webコンテナにredisとdbをdepends_onさせているため、redisコンテナとdbコンテナが立ち上がってから、webコンテナが立ち上がる構成です。
+
 ```
 version: '2'
 
@@ -190,10 +193,11 @@ services:
       MYSQL_USER: sample_user
       MYSQL_PASSWORD: password
 ```
+ファイル内で使用している定義を説明します。
 - Services
 起動するコンテナの定義。
 - build
-ビルドするDockerfileのあるディレクトリを指定
+ビルドするDockerfileのあるディレクトリを指定。
 - image
 ビルドするイメージ名を指定。
 - depends_on
